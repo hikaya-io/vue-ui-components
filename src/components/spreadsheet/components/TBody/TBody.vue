@@ -183,6 +183,7 @@
                 v-model="row[header].value"
                 format="yyyy-MM-dd"
                 value-format="yyyy-MM-dd"
+                @change="inputHandleChange($event, header, rowIndex, colIndex)"
                 :ref="`datepicker-${currentTable}-${colIndex}-${rowIndex}`"
               />
             </template>
